@@ -31,21 +31,24 @@ function TaskList({ tasks, updateTask, deleteTask, deleteTaskAll, checkTask,sele
   return (
     <>
       <VStack
+
         divider={<StackDivider />}
-        borderColor='gray.100'
-        borderWidth='2px'
+        borderColor='black.100'
+        borderWidth='1px'
         p='5'
+       
+        background={'orange.300'}
         borderRadius='lg'
-        w='100%'
+       w='100%'
         maxW={{ base: "90vw", sm: "80vw", lg: "50vw", xl: "30vw" }}
         alignItems='stretch'
       >
         {tasks.map((task, index) => (
         
-          <HStack key={task.id} opacity={task?.check === true ? "0.2" : "1"}>
+          <HStack  key={task.id} opacity={task?.check === true ? "0.2" : "1"}>
             <Text
               w='100%'
-              p='8px'
+              p='20px'
               borderRadius='lg'
               as={task?.check === true ? "s" : ""}
               cursor='pointer'

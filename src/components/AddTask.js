@@ -41,21 +41,23 @@ function AddTask({ addTask }) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <HStack mt='4' mb='4'>
+      <HStack mt='4' mb='30'>
         <Input
-          h='46'
+          h='55'
+        
           borderColor={!statusInput ? "red.300" : "transparent"}
           variant='filled'
           placeholder='Enter your task'
           value={content}
+      
           onChange={(e) => setContent(e.target.value)}
         />
         <Button
-          //colorScheme='twitter'
+          colorScheme='messenger'
           px='8'
           pl='10'
           pr='10'
-          h='46'
+          h='55'
           type='submit'
         >
           Add

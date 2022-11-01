@@ -13,8 +13,8 @@ const theme = extendTheme({
 
 ReactDOM.render(
   <React.StrictMode>
-    <ChakraProvider theme={theme}>
-      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+    <ChakraProvider  theme={theme}>
+      {/* <ColorModeScript initialColorMode={theme.config.initialColorMode} /> */}
       <App />
     </ChakraProvider>
   </React.StrictMode>,
